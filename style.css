@@ -1,0 +1,170 @@
+.lists{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(241, 244, 245);
+    border-bottom:1px solid rgb(193, 189, 216);
+    border-top: 1px solid rgb(193, 189, 216);
+}
+.lists .one{
+ border-right: 1px solid rgb(123, 109, 201);
+}
+.lists ul{
+    list-style: none;
+}
+.lists ul li{
+    float: left;
+    
+
+}
+.lists ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: gray;
+}
+.lists img{
+    width: 20px;
+    height: 20px;
+}
+span{
+    font-weight: bold;
+}
+.search{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sear{
+    
+    width: 55%;
+}    
+.sear form ul{
+    
+    list-style:none ;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+.sear form ul li{
+    float: left;
+    box-sizing: border-box;
+    border:1px solid rgb(193, 189, 216);
+    border-radius: 30px;
+    margin: 5px;
+}
+.sear p{
+position: relative;
+top: 50px;
+left: 650px;
+color:gray ;
+}
+.sear form ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(17, 15, 15);
+  
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: rgb(241, 244, 245);
+    background-image: url('images/7.JPG');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+  .all{
+    width: 100%;
+    height: 400px;
+  background-color: rgb(44, 43, 43);
+  }
+
+  .li1 ul{
+list-style: none;
+  }
+  .li1 ul li{
+      float: left;
+      margin: 30px;
+      position: relative;
+      left: 300px;
+      border-bottom:1px solid rgb(125, 124, 129);
+  }
+  .li1 ul li a{
+      text-decoration: none;
+      padding: 15px;
+      color: gray;
+      font-size: 20px;
+  }
+   .main-list{
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      position: relative;
+     left: 350px;
+  }
+  .main-list .list1 ul{
+      list-style: none;
+  }
+  .main-list .list1 ul li{
+      padding: 5px;
+  }
+  .main-list .list1 ul li a{
+      text-decoration: none;
+      color: white;
+      
+  }
+  .main-list .last{
+      background-color: rgb(59, 58, 58);
+      border-radius: 10px;
+      height: 150px;
+      width: 250px;
+      position: relative;
+      left: 40px;
+  }
+  .last input{
+      height: 40px;
+      width: 180px;
+      border-radius: 10px;
+      position: relative;
+      left: 30px;
+      top:10px
+  }
+  form img{
+      position: relative;
+      top: 20px;
+      right: 150px;
+  }
+  button{
+      position: relative;
+      top: 20px;
+      left: 30px;
+      width: 80px;
+      height: 30px;
+  }
+  .icons{
+      width: 350px;
+  }
+  .icons ul{
+      list-style: none;
+  }
+  .icons ul li{
+      float: left;
+      padding: 5px;
+  }
+  .icons  p a{
+      text-decoration: none;
+      color: gray;
+      font-size: 20px;
+      position: relative;
+      left: 200px;
+      border-bottom:1px solid rgb(125, 124, 129);
+  }
+  .icons img{
+      width: 30px;
+      height: 30px;
+  }
