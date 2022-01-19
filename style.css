@@ -5,16 +5,11 @@
     border-bottom:1px solid rgb(193, 189, 216);
     border-top: 1px solid rgb(193, 189, 216);
 }
-.lists .one{
- border-right: 1px solid rgb(123, 109, 201);
-}
 .lists ul{
     list-style: none;
 }
 .lists ul li{
     float: left;
-    
-
 }
 .lists ul li a{
     text-decoration: none;
@@ -73,10 +68,136 @@ input[type=text] {
     border-radius: 30px;
     font-size: 16px;
     background-color: rgb(241, 244, 245);
-    background-image: url('images/7.JPG');
+    background-image: url('images/editfind_104370.svg');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
+  }
+  .container1{
+      display: none;
+      width: 500px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+  }
+  .container1 input[type=email] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  .container1 input[type=password] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  .container1 .one{
+      position: relative;
+      left: 130px;
+      width: 200px;
+      background-color: firebrick;
+      color: #fff;
+  }
+  .container1 .tow{
+    position: relative;
+    left: 130px;
+    width: 200px;
+      background-color: rgb(218, 213, 213);
+      color: gray;
+  }
+  .container1 p{
+      position: relative;
+      left: 170px;
+      top:10px
+  }
+.container1 h2{
+    position: relative;
+    left: 70px;
+}
+  .container1 form{
+      position: relative;
+      left: 100px;
+  }
+ 
+  .option-list{
+      position: relative;
+      left: 400px;
+  }
+  .option-list ul{
+      list-style: none;
+  }
+  .option-list ul li{
+      float: left;
+  }
+  .option-list ul li a{
+      text-decoration: none;
+      color: gray;
+      padding: 15px;
+      font-size: 20px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .slider{
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+}
+.slider img{
+    width: 800px;
+    height: 200px;
+    float: left;
+}
+.slider ul{
+padding: 0px;
+width: 1500px;
+list-style: none;
+position: relative;
+display: flex;
+animation: sliding 20s ease-in-out infinite;
+}
+
+
+.slider ul:hover{
+    animation-play-state: paused;
+}
+@keyframes sliding{
+    0%{right:0px;}
+   30%{ right: 400px}
+    60%{right:800px}
+   90%{right:1200px}
+   100%{right:1600px}
+}
+  .free{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
   .all{
     width: 100%;
@@ -105,18 +226,19 @@ list-style: none;
       justify-content: space-between;
       width: 75%;
       position: relative;
-     left: 350px;
+     left: 300px;
   }
   .main-list .list1 ul{
       list-style: none;
   }
   .main-list .list1 ul li{
       padding: 5px;
+      text-align:right ;
   }
   .main-list .list1 ul li a{
       text-decoration: none;
       color: white;
-      
+     
   }
   .main-list .last{
       background-color: rgb(59, 58, 58);
@@ -132,8 +254,10 @@ list-style: none;
       border-radius: 10px;
       position: relative;
       left: 30px;
-      top:10px
+      top:10px;
+      text-align: right;
   }
+ 
   form img{
       position: relative;
       top: 20px;
@@ -155,6 +279,7 @@ list-style: none;
   .icons ul li{
       float: left;
       padding: 5px;
+      
   }
   .icons  p a{
       text-decoration: none;
@@ -167,4 +292,21 @@ list-style: none;
   .icons img{
       width: 30px;
       height: 30px;
+      position: relative;
+      left:40px;
+      border-radius: 30px;
+  }
+  .copy{
+    background-color:rgb(229, 226, 226);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: rgb(104, 100, 100);
+  }
+
+  .copy1 a{
+      text-decoration: none;
+      color: rgb(104, 100, 100);
+      position: relative;
+      top:10px;
   }
