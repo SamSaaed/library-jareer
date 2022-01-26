@@ -1,9 +1,32 @@
+
 .lists{
     width: 100%;
     height: 50px;
     background-color: rgb(241, 244, 245);
     border-bottom:1px solid rgb(193, 189, 216);
     border-top: 1px solid rgb(193, 189, 216);
+}
+
+.hover-img {
+  height: 100px;
+  background-color: rgb(241, 244, 245);
+  border-bottom:1px solid rgb(193, 189, 216);
+  border-top: 1px solid rgb(193, 189, 216);
+}
+.hover-img ul{
+  list-style: none;
+}
+.hover-img ul li{
+  float: left;
+}
+.hover-img ul li a{
+  text-decoration: none;
+  color: gray;
+  font-size: 11px;
+  padding: 2px;
+}
+.hover-img{
+  display: none;
 }
 .lists ul{
     list-style: none;
@@ -61,7 +84,7 @@ color:gray ;
     color: rgb(17, 15, 15);
   
 }
-input[type=text] {
+.sear input[type=text] {
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -73,58 +96,155 @@ input[type=text] {
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
   }
-  .container1{
-      display: none;
-      width: 500px;
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-  }
-  .container1 input[type=email] {
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  .container1 input[type=password] {
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  .container1 .one{
-      position: relative;
-      left: 130px;
-      width: 200px;
-      background-color: firebrick;
-      color: #fff;
-  }
-  .container1 .tow{
-    position: relative;
-    left: 130px;
-    width: 200px;
-      background-color: rgb(218, 213, 213);
-      color: gray;
-  }
-  .container1 p{
-      position: relative;
-      left: 170px;
-      top:10px
-  }
-.container1 h2{
-    position: relative;
-    left: 70px;
-}
-  .container1 form{
-      position: relative;
-      left: 100px;
-  }
  
+  
+  .container1{
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  
+}
+
+.is-hidden {
+  display: none !important;
+}
+.container1 .hide-modal-btn{
+  background-color: firebrick;
+  color: white;
+  width: 40px;
+  height: 30px;
+  position: relative;
+  top:0px
+}
+
+.sigin_up{
+    width: 400px;
+    position: relative;
+    right: 200px;
+}
+.sigin_up input[type=tel] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: right;
+  }
+  .sigin_up button{
+      position: relative;
+      left:50px;
+     width: 300px;
+     height: 40px;
+  }
+.sigin_up  p{
+text-align: center;
+}
+.sigin_up input[type=text] {
+    position: relative;
+    left:50px;
+    top:15px;
+    text-align: right;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+}
+
+.sigin_up input[type=email] {
+    text-align: right;
+   
+    position: relative;
+    left:50px;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+}
+
+
+.sigin_up input[type=password] {
+    text-align: right;
+   
+    position: relative;
+    left:50px;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+
+}
+.sigin_up select{
+  width: 100px;
+  height: 40px;
+  background-color: #ccc;
+}
+.sigin_up input[type=submit] {
+    position: relative;
+    top:100px;
+    left: 50px;
+    background-color: rgb(17, 96, 243);
+    color: white;
+    border-radius: 4px;
+    width: 300px;
+  height:50px ;
+}
+.sigin_up  .check{
+    position: relative;
+    left: 100px;
+  
+}
+.log_in{
+    position: relative;
+    left: 50px;
+}
+.log_in  .row input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+}
+.log_in  .row input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+}
+.log_in .one{
+    position: relative;
+    left: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: firebrick;
+    color: #fff;
+}
+.log_in .tow{
+ 
+ position: relative;
+ left: 60px;
+  width: 150px;
+  height:50px ;
+    background-color: rgb(17, 96, 243);
+    color: white;
+    border-radius: 4px;
+}
+.log_in p{
+    position: relative;
+    left: 100px;
+    top:10px
+}
+.log_in h2{
+  position: relative;
+  left: 100px;
+}
   .option-list{
       position: relative;
-      left: 400px;
+      left: 300px;
   }
   .option-list ul{
       list-style: none;
@@ -162,43 +282,208 @@ input[type=text] {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  .slider{
-    width: 800px;
-    height: 400px;
-    margin: auto;
-    overflow: hidden;
+  
+.slidershow{
+    width: 1100px;
     height: 300px;
+    overflow: hidden;
+
+  }
+  .middle{
+    position: relative;
+    left: 10%;
+    transform: translate(-50%,);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }.count{
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    display: none;
+  
 }
-.slider img{
-    width: 800px;
-    height: 200px;
-    float: left;
+.count-1{
+  width: 500px;
+  background-color: rgb(204, 193, 193);
+ position: relative;
+left: 200px;
 }
-.slider ul{
-padding: 0px;
-width: 1500px;
-list-style: none;
+.count-1 img{
+    position: relative;
+  
+    left: 150px;
+}
+.offfers{
+    position: relative;
+    top:50px;
+    left: 150px;
+  color: rgb(231, 18, 18);
+  font-size: 30px;
+}
+.count-1 p{
+    font-size: 20px;
+    color:rgb(231, 18, 18); ;
+}
+#demo{
 position: relative;
-display: flex;
-animation: sliding 20s ease-in-out infinite;
+top:20px;
+left: 180px;
+color: rgb(231, 18, 18);
+font-size: 25px;
 }
-
-
-.slider ul:hover{
-    animation-play-state: paused;
+.off{
+   position: absolute;
+  
 }
-@keyframes sliding{
-    0%{right:0px;}
-   30%{ right: 400px}
-    60%{right:800px}
-   90%{right:1200px}
-   100%{right:1600px}
+.off1{
+    position: relative;
+    top:70px
+}
+hr{
+  position: relative;
+  top:20px
+   
 }
   .free{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      
   }
+  .free .img1{
+    padding: 10px;
+  }
+  .mySlides  a :hover{
+    border:1px solid rgb(238, 7, 7);
+  }
+  
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 100px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{
+  margin-right: 600px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
   .all{
     width: 100%;
     height: 400px;
@@ -260,7 +545,7 @@ list-style: none;
  
   form img{
       position: relative;
-      top: 20px;
+      top: 15px;
       right: 150px;
   }
   button{
@@ -310,3 +595,127 @@ list-style: none;
       position: relative;
       top:10px;
   }
+  
+/* this media jquery for small devices like mobiles*/
+@media screen  and (max-width: 450px) {
+
+  .lists {
+display: none;
+  }
+  .hover-img{
+    display: block;
+  }
+  .hover-img img{
+    width: 40px;
+    height: 50px;
+  }
+  .hover-img ul{
+    display: none;
+  }
+.search{
+  display: none;
+}
+.option-list{
+  position: relative;
+      left: 0px;
+}
+
+.option-list ul li{
+  float: left;
+}
+.option-list ul li a{
+  
+  font-size: 11px;
+}
+.option-list hr{
+  width: 20%;
+}
+.slidershow{
+  position: relative;
+  left: 0px;
+  width: 400px;
+}
+.free{
+  position: relative;
+  top:10px
+}
+.free img{
+ width: 80px;
+}
+.free .img1{
+  padding: 5px;
+}
+.slideshow-container{
+  width: 400px;
+}
+.mySlides {
+  position: relative;
+  top:10px
+}
+.prev , .next{
+  margin: 0px;
+  padding: 40px;
+}
+.prev{
+  margin-right: 250px;
+}
+.all{
+  width: 450px;
+}
+.li1 ul li{
+  float: left;
+  margin: 0px;
+  position: relative;
+  left: 0px;
+  top:10px
+}
+.li1 ul li a{
+  font-size: 11px;
+  padding: 10px;
+  color: #f1f1f1;
+}
+.main-list{
+  width: 105%;
+      position: relative;
+     left: 0px;
+}
+
+.main-list .list1 ul li{
+  padding: 3px;
+}
+.main-list .list1 ul li a{
+  font-size: 11px;
+}
+.last{display: none;
+}
+.icons{
+  width: 300px;
+  position: relative;
+top: 200px;
+}
+.icons ul li{
+  float: left;
+  padding: 5px;
+  position: relative;
+  right: 250px;
+}
+.icons img{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left:10px;
+}
+.copy{
+  width: 450px;
+}
+.copy1{
+  width: 200px;
+
+}
+.copy2 img{
+width:250px;
+}
+ .copy1 a , p{
+  font-size: 11px;
+}
+}
