@@ -1,3 +1,41 @@
+const changeLang  = document.querySelectorAll('.change-language');
+const htmlElement = document.querySelector('html');
+
+changeLang.forEach( element =>
+    {
+        element.addEventListener('click', ()=>
+        {
+
+            if ( htmlElement.dir === 'rtl' )
+            {
+                htmlElement.dir = 'ltr';
+                element.querySelector('span').innerHTML = "English";
+            }
+            else
+            {
+                htmlElement.dir = 'rtl';
+                element.querySelector('span').innerHTML = "Arabic";
+            }
+        });
+    });
+    var slide_index = 1;
+slidesDisplay(slide_index);
+function nextSlide(n) {
+slidesDisplay(slide_index += n);
+}
+function currentSlide(n) {
+slidesDisplay(slide_index = n);
+}
+function slidesDisplay(n) {
+var i;
+var slides = document.getElementsByClassName("showSlider");
+if (n > slides.length) { slide_index = 1 }
+if (n < 1) { slide_index = slides.length }
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slides[slide_index - 1].style.display = "block";
+}
 const el = (element) => document.querySelector(element);
 const elAll = (elements) => document.querySelectorAll(elements);
 
@@ -11,6 +49,9 @@ hideModalBtn.addEventListener('click', () => {
   el('.container1').classList.add('is-hidden');
 });
 
+const callLink= image => {
+  document.getElementById('pop').style.display = "block";
+}
 const viewImgBtn = el('.view-img-btn');
 viewImgBtn.addEventListener('click', () => {
   el('.count1').classList.remove('is-hidden');
@@ -22,6 +63,12 @@ hideImgBtn.addEventListener('click', () => {
   el('.count1').classList.add('is-hidden');
 });
 
+const callImage = image => {
+  document.getElementById('popUP').style.display = "block";
+}
+
+
+const hideModule = id => document.getElementById(id).style.display = "none";
 var countDownDate = new Date("Feb 5, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second

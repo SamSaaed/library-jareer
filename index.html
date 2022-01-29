@@ -10,25 +10,29 @@
 </head>
 
 <body>
-    <div class="hover-img">
-        <a href="#"><img src="images/list.JPG"></a>
-        <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact Us</a></li>
-
-                </ul>
-            
-        
-           
-    </div>
+    <header>
+        <div>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/list.JPG"></a>
+                    <ul>
+                        <li><a href="#" > ادخل لحسابك أو سجل الان</a></li>
+                        <li><a href="#">المفضلة</a></li>
+                        <li><a href="#">المساعدة</a></li>
+                        <li><a href="#">فروعنا</a></li>
+                        <li><a href="#">المملكة العربية السعودية</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
     <div class="lists">
-       
+
         <ul>
             <div class="one">
                 <li> <a href="#"><img src="images/0.JPG"></a></li>
-                <li><a href="#">English</a></li>
+                <li class="change-language"><a href="#"><span>English</span></a></li>
             </div>
             <div class="one">
                 <li> <a href="#"><img src="images/01.JPG"></a></li>
@@ -45,40 +49,14 @@
             <li><a href="#"><img src="images/07.JPG"></a></li>
             <li><a href="#">المفضلة</a></li>
             <li><a href="#"><img src="images/08.JPG"></a></li>
-            <li><a href="#" class="show-modal-btn"> <span>ادخل لحسابك أو سجل الان</span></a></li>
+            <li><a href="#" class="show-modal-btn" onclick="callLink(this);" alt=""> <span>ادخل لحسابك أو سجل الان</span></a></li>
             <li><a href="#"><img src="images/09.JPG"></a></li>
         </ul>
     </div>
-    <div class="container1 is-hidden">
+    <div class="container1 is-hidden" id="pop">
 
-        <div class="sigin_up">
-            <div>
                 <button class="hide-modal-btn">اغلاق</button>
-            </div>
-            <form>
-                <select id="code" name="code">
-                    <option value="code1">رمز البلاد<br>+970</option>
-                    <option value="+966">+966</option>
-                    <option value="+967">+967</option>
-                    <option value="+965">+965</option>
-                </select>
-                <input type="tel" id="phone" name="phone" placeholder="رقم الجوال" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-            </form>
-            <p>سوف نرسل لك رمز التحقق برسالة نصية</p>
-            <button class="rw1">ارسال رقم التحقق</button>
-
-            <input type="text" id="fname" name="fname" size="50" placeholder="الاسم الاول">
-            <input type="text" id="fname" name="fname" size="50" placeholder="اسم العائلة">
-            <input type="email" id="email" name="email" placeholder="البريد الاكتروني">
-            <input type="email" id="email" name="email" placeholder=" تأكيد البريد الاكتروني">
-            <input type="password" id="pwd" name="pwd" placeholder="كلمة السر">
-            <input type="submit" value="انشاء حساب">
-            <div class="check">
-                <input type="checkbox"> اوافق على الاحكام والشروط<br>
-                <input type="checkbox"> التسجيل للانضمام للنشرة البريدية
-            </div>
-
-        </div>
+           
         <div class="log_in">
             <form>
                 <h2>تسجيل الدخول</h2>
@@ -106,9 +84,9 @@
             <img src="images/06.JPG">
         </div>
         <div class="sear">
-            <p>البحث</p>
+
             <form>
-                <input type="text" name="search">
+                <input type="text" name="search" placeholder="البحث">
 
                 <ul>
                     <li><a href="#">تلفزيون</a></li>
@@ -122,7 +100,7 @@
             </form>
         </div>
         <div class="img2">
-            <img src="images/6.JPG">
+            <img src="images/37.JPG">
         </div>
     </div>
     <div class="option-list">
@@ -176,78 +154,173 @@
             </li>
         </ul>
     </div>
-    <div class="logo">
-        <div class="slidershow middle">
-
-            <div class="slides">
-                <input type="radio" name="r" id="r1" checked>
-                <input type="radio" name="r" id="r2">
-                <input type="radio" name="r" id="r3">
-                <input type="radio" name="r" id="r4">
-                <input type="radio" name="r" id="r5">
-                <div class="slide s1">
-                    <img src="images/9.JPG" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/10.JPG" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/11.JPG" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/12.JPG" alt="">
-                </div>
-                <div class="slide">
-                    <img src="images/13.JPG" alt="">
-                </div>
-            </div>
-
-            <div class="navigation">
-                <label for="r1" class="bar"></label>
-                <label for="r2" class="bar"></label>
-                <label for="r3" class="bar"></label>
-                <label for="r4" class="bar"></label>
-                <label for="r5" class="bar"></label>
-            </div>
+    
+    <div class="container">
+        <div class="showSlider fad">
+        <img src="images/9.JPG" >
+        
         </div>
-    </div>
+        <div class="showSlider fad">
+        <img src="images/10.JPG" >
+        
+        </div>
+        <div class="showSlider fad">
+        <img src="images/11.JPG">
+    
+        </div>
+        <div class="showSlider fad">
+        <img src="images/12.JPG" >
+        
+        </div>
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+        </div>
+    <h3>العروض الحالية</h3>
     <div class="free">
         <div class="img1">
             <a href="#">
-                <img src="images/17.JPG">
+                <img src="images/32.JPG" class="view-img-btn" onclick="callImage(this);" alt="">
             </a>
         </div>
         <div class="img1">
-            <a href="#"><img src="images/18.JPG">
+            <a href="#"><img src="images/32.JPG" class="view-img-btn" onclick="callImage(this);" alt="">
             </a>
         </div>
         <div class="img1">
-            <a href="#"> <img src="images/19.JPG">
+            <a href="#"> <img src="images/32.JPG" class="view-img-btn" onclick="callImage(this);" alt="">
             </a>
         </div>
         <div class="img1">
             <a href="#">
-                <img src="images/20.JPG" class="view-img-btn">
+                <img src="images/32.JPG" class="view-img-btn" onclick="callImage(this);" alt="">
             </a>
         </div>
     </div>
+    <h3>كتب تاريخية</h3>
+    <div class="free">
+
+        <div class="img1">
+            <a href="#">
+                <img src="images/31.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"><img src="images/31.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"> <img src="images/31.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#">
+                <img src="images/31.JPG">
+            </a>
+        </div>
+    </div>
+    <h3>كتب دينية</h3>
+    <div class="free">
+        <div class="img1">
+            <a href="#">
+                <img src="images/33.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"><img src="images/33.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"> <img src="images/33.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#">
+                <img src="images/33.JPG">
+            </a>
+        </div>
+    </div>
+    <h3>طبخ</h3>
+    <div class="free">
+        <div class="img1">
+            <a href="#">
+                <img src="images/34.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"><img src="images/34.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"> <img src="images/34.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#">
+                <img src="images/34.JPG">
+            </a>
+        </div>
+    </div>
+    <h3>اقتصاد</h3>
+    <div class="free">
+        <div class="img1">
+            <a href="#">
+                <img src="images/35.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"><img src="images/35.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"> <img src="images/35.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#">
+                <img src="images/35.JPG">
+            </a>
+        </div>
+    </div>
+    <h3>سياسة</h3>
+    <div class="free">
+        <div class="img1">
+            <a href="#">
+                <img src="images/36.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"><img src="images/36.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#"> <img src="images/36.JPG">
+            </a>
+        </div>
+        <div class="img1">
+            <a href="#">
+                <img src="images/36.JPG">
+            </a>
+        </div>
+    </div>
+
     <div class="count1 is-hidden">
 
-        <div class="count-1">
-            <button class="hide-img-bnt">اغلاق</button>
+        <div class="count-1" id="popUP">
+            <button class="hide-img-bnt" onclick="hideModule('popUP');">اغلاق</button>
             <p id="demo"> Feb 5, 2022 15:37:25</p>
             <p class="offfers"> عروض جرير الكبرى بداية شهر فبراير </p>
-            <p>خصم %50</p>
+            <p>خصم %20</p>
             <h4 class="off">
                 <hr
                     style="height:2px;border-width:0;color:rgb(219, 22, 22);background-color:rgb(219, 22, 22);width: 90%;">
-                السعر السابق 100 ر.س
+                السعر السابق 17.99 ر.س
 
             </h4>
 
-            <h4 class="off1"> السعر الحالي 50 ر.س</h4>
+            <h4 class="off1"> السعر الحالي 9.88 ر.س</h4>
 
-            <img src="images/20.JPG">
+            <img src="images/32.JPG">
         </div>
     </div>
     <div class="slideshow-container">

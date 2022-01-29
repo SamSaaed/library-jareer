@@ -55,8 +55,10 @@ span{
     align-items: center;
 }
 .sear{
-    
+    position: relative;
+    top:15px;
     width: 55%;
+   
 }    
 .sear form ul{
     
@@ -71,12 +73,6 @@ span{
     border:1px solid rgb(193, 189, 216);
     border-radius: 30px;
     margin: 5px;
-}
-.sear p{
-position: relative;
-top: 50px;
-left: 650px;
-color:gray ;
 }
 .sear form ul li a{
     text-decoration: none;
@@ -103,6 +99,7 @@ color:gray ;
     height: 600px;
     border-radius: 5px;
     background-color: #f2f2f2;
+  
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -110,7 +107,6 @@ color:gray ;
   position:absolute;
   z-index: 1;
   top: 0;
-  
 }
 
 .is-hidden {
@@ -125,91 +121,35 @@ color:gray ;
   top:0px
 }
 
-.sigin_up{
-    width: 400px;
-    position: relative;
-    right: 200px;
-}
-.sigin_up input[type=tel] {
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: right;
-  }
-  .sigin_up button{
-      position: relative;
-      left:50px;
-     width: 300px;
-     height: 40px;
-  }
-.sigin_up  p{
-text-align: center;
-}
-.sigin_up input[type=text] {
-    position: relative;
-    left:50px;
-    top:15px;
-    text-align: right;
-    border-radius: 4px;
-    width: 300px;
-    height: 40px;
-}
-
-.sigin_up input[type=email] {
-    text-align: right;
-   
-    position: relative;
-    left:50px;
-    border-radius: 4px;
-    width: 300px;
-    height: 40px;
-}
-
-
-.sigin_up input[type=password] {
-    text-align: right;
-   
-    position: relative;
-    left:50px;
-    border-radius: 4px;
-    width: 300px;
-    height: 40px;
-
-}
-.sigin_up select{
-  width: 100px;
-  height: 40px;
-  background-color: #ccc;
-}
-.sigin_up input[type=submit] {
-    position: relative;
-    top:100px;
-    left: 50px;
-    background-color: rgb(17, 96, 243);
-    color: white;
-    border-radius: 4px;
-    width: 300px;
-  height:50px ;
-}
-.sigin_up  .check{
-    position: relative;
-    left: 100px;
-  
+#pop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(3, 3, 3, 0.6);
+  display: none;
+  transition: 1s;
 }
 .log_in{
+  width: 400px;
+  height: 400px;
     position: relative;
-    left: 50px;
+    left: 500px;
+    background-color: rgb(226, 226, 236);
 }
 .log_in  .row input[type=email] {
-  width: 100%;
+  position: relative;
+  left: 70px;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: right;
 }
 .log_in  .row input[type=password] {
-  width: 100%;
+  position: relative;
+  left: 70px;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -217,8 +157,8 @@ text-align: center;
 }
 .log_in .one{
     position: relative;
-    left: 10px;
-    width: 300px;
+    left: 80px;
+    width: 200px;
     height: 50px;
     background-color: firebrick;
     color: #fff;
@@ -226,7 +166,7 @@ text-align: center;
 .log_in .tow{
  
  position: relative;
- left: 60px;
+ left: 110px;
   width: 150px;
   height:50px ;
     background-color: rgb(17, 96, 243);
@@ -235,12 +175,14 @@ text-align: center;
 }
 .log_in p{
     position: relative;
-    left: 100px;
-    top:10px
+    left: 150px;
+    top:10px;
+    color: #fff;
 }
 .log_in h2{
   position: relative;
-  left: 100px;
+  left: 150px;
+  color: #fff;
 }
   .option-list{
       position: relative;
@@ -282,114 +224,111 @@ text-align: center;
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
-.slidershow{
-    width: 1100px;
-    height: 300px;
-    overflow: hidden;
-
-  }
-  .middle{
-    position: relative;
-    left: 10%;
-    transform: translate(-50%,);
-  }
-  .navigation{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
-  .bar{
-    width: 50px;
-    height: 10px;
-    border: 2px solid #fff;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  .bar:hover{
-    background: #fff;
-  }
-  
-  input[name="r"]{
-      position: absolute;
-      visibility: hidden;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 100%;
-    display: flex;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 0.6s;
-  }
-  .slide img{
+  .showSlider {
+    display: none
+    }
+    .showSlider img {
     width: 100%;
-    height: 100%;
-  }
-  
-  #r1:checked ~ .s1{
-    margin-left: 0;
-  }
-  #r2:checked ~ .s1{
-    margin-left: -20%;
-  }
-  #r3:checked ~ .s1{
-    margin-left: -40%;
-  }
-  #r4:checked ~ .s1{
-    margin-left: -60%;
-  }
-  #r5:checked ~ .s1{
-    margin-left: -80%;
-  }.count{
+    }
+    .container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+    .left, .right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    }
+    .right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    .left:hover, .right:hover {
+    background-color: rgba(115, 115, 115, 0.8);
+    }
+    .active {
+    background-color: #717171;
+    }
+    /* Fading animation */
+    .fad {
+    -webkit-animation-name: fad;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fad;
+    animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fad {
+    from {
+    opacity: .4
+    }
+    to {
+    opacity: 1
+    }
+    }
+    @keyframes fad {
+    from {
+    opacity: .4
+    }
+    to {
+    opacity: 1
+    }
+    }
+  .count{
     width: 80%;
     height: 500px;
     margin: 50px auto;
     display: none;
   
 }
-.count-1{
-  width: 500px;
-  background-color: rgb(204, 193, 193);
- position: relative;
-left: 200px;
-}
 .count-1 img{
     position: relative;
-  
-    left: 150px;
+    left: 500px;
+    
 }
 .offfers{
     position: relative;
-    top:50px;
-    left: 150px;
-  color: rgb(231, 18, 18);
+    left: 500px;
+  color: rgb(245, 238, 238);
   font-size: 30px;
 }
 .count-1 p{
     font-size: 20px;
-    color:rgb(231, 18, 18); ;
+    color:rgb(245, 238, 238);
+}
+
+#popUP {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(3, 3, 3, 0.6);
+  display: none;
+  transition: 1s;
 }
 #demo{
 position: relative;
 top:20px;
-left: 180px;
-color: rgb(231, 18, 18);
+left: 500px;
+color: rgb(245, 238, 238);
 font-size: 25px;
 }
 .off{
    position: absolute;
-  
+  color:rgb(245, 238, 238) ;
 }
 .off1{
     position: relative;
-    top:70px
+    top:70px;
+    
+    color: rgb(245, 238, 238);
 }
 hr{
   position: relative;
@@ -398,13 +337,26 @@ hr{
 }
   .free{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
-      
+  }
+      h3{
+text-align: right;
+      position: relative;
+      right: 40px;
   }
   .free .img1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgb(206, 200, 200);
+    border-radius: 10px;
     padding: 10px;
+  
   }
+  
+  .img1 a :hover{
+    border:1px solid rgb(238, 7, 7);
+  }
+  
   .mySlides  a :hover{
     border:1px solid rgb(238, 7, 7);
   }
@@ -415,13 +367,14 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1100px;
   position: relative;
+  top:20px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -596,54 +549,102 @@ list-style: none;
       top:10px;
   }
   
+header div ul{
+  display: none;
+}
 /* this media jquery for small devices like mobiles*/
 @media screen  and (max-width: 450px) {
 
   .lists {
 display: none;
   }
-  .hover-img{
-    display: block;
+  header div ul{
+      display: block;
+      
   }
-  .hover-img img{
-    width: 40px;
-    height: 50px;
-  }
-  .hover-img ul{
-    display: none;
-  }
+  header  div a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        padding: 15px;
+        text-align: center;
+        display:inline-block;
+      }
+      header div  ul {
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+      }
+      header div  ul li {
+          display: inline-block;
+    }
+    header div  ul li:hover {
+          background:rgb(216, 236, 241);
+    }
+    header div  ul li:hover ul {
+          display: block;
+        }
+        header div  ul li ul {
+        position: relative;
+        width: 150px;
+        display: none;
+      }
+      header div  ul li ul li { 
+        background: rgb(196, 216, 221);
+        display: block; 
+      }
+      header div  ul li ul li a {
+          display:block !important;
+        } 
+        header div  ul li ul li:hover {
+          background: rgb(212, 210, 210);
+        }
+        .option-list{
+          display: none;
+        }
 .search{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.sear ul{
   display: none;
 }
-.option-list{
-  position: relative;
-      left: 0px;
+.img2 img{
+  width: 70px;
+}
+.container1{
+  width: 400px;
+}
+.free{
+ display: flex;
+ flex-flow: row wrap;
+ 
+}
+.img1{
+ min-width: 200px;
 }
 
-.option-list ul li{
-  float: left;
+.count-1 img{
+  position: relative;
+  left: 50px;
+  top: 50px;
 }
-.option-list ul li a{
-  
-  font-size: 11px;
+.offfers{
+  position: relative;
+  left: 50px;
+
 }
-.option-list hr{
-  width: 20%;
-}
+#demo{
+  position: relative;
+  top:20px;
+  left: 50px;
+  }
 .slidershow{
   position: relative;
   left: 0px;
   width: 400px;
-}
-.free{
-  position: relative;
-  top:10px
-}
-.free img{
- width: 80px;
-}
-.free .img1{
-  padding: 5px;
 }
 .slideshow-container{
   width: 400px;
@@ -658,6 +659,9 @@ display: none;
 }
 .prev{
   margin-right: 250px;
+}
+.next{
+  margin-right: 50px;
 }
 .all{
   width: 450px;
@@ -677,7 +681,7 @@ display: none;
 .main-list{
   width: 105%;
       position: relative;
-     left: 0px;
+     left: 0px;  
 }
 
 .main-list .list1 ul li{
@@ -686,24 +690,29 @@ display: none;
 .main-list .list1 ul li a{
   font-size: 11px;
 }
-.last{display: none;
+.all2{
+  position: relative;
+  top:220px;
+  right: 270px;
+}
+.all{
+  
+  height: 500px;
 }
 .icons{
   width: 300px;
   position: relative;
-top: 200px;
+
 }
 .icons ul li{
   float: left;
   padding: 5px;
-  position: relative;
-  right: 250px;
+ 
 }
 .icons img{
   width: 20px;
   height: 20px;
-  position: relative;
-  left:10px;
+  
 }
 .copy{
   width: 450px;
