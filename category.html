@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Category</title>
+</head>
+<body>
+    <div class="lists">
+
+        <ul>
+            <div class="one">
+                <li> <a href="#"><img src="images/0.JPG"></a></li>
+                <li class="change-language"><a href="#"><span>English</span></a></li>
+            </div>
+            <div class="one">
+                <li> <a href="#"><img src="images/01.JPG"></a></li>
+                <li><a href="#">المملكة العربية السعودية</a></li>
+            </div>
+            <li><a href="#"><img src="images/02.JPG"></a></li>
+            <li><a href="#">فروعنا</a></li>
+            <li><a href="#"><img src="images/03.JPG"></a></li>
+            <li><a href="#">المساعدة</a></li>
+            <li> <a href="#"><img src="images/04.JPG"></a></li>
+            <li><a href="#">طلبات الصيانة</a></li>
+            <li><a href="#"><img src="images/05.JPG"></a></li>
+            <li><a href="#">تتبع الشحنة</a></li>
+            <li><a href="#"><img src="images/07.JPG"></a></li>
+            <li><a href="#">المفضلة</a></li>
+            <li><a href="#"><img src="images/08.JPG"></a></li>
+            <li><a href="#" class="show-modal-btn" onclick="callLink(this);" alt=""> <span>ادخل لحسابك أو سجل الان</span></a></li>
+            <li><a href="#"><img src="images/09.JPG"></a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <div class="img">
+           <a href="salh.html"> <img  id="i" src="images/06.JPG"><span id="num">0</span></a>
+        </div>
+        <div class="sear">
+
+            <form>
+                <input type="text" name="search" placeholder="البحث">
+            </form>
+        </div>
+        <div class="img2">
+            <img src="images/37.JPG">
+        </div>
+    </div>
+    
+        <div class="categ">
+            <div class="d_left">
+                
+                    <input type="text" id="ser" onkeyup="search()" placeholder="الرجاء الإختيار" >
+                
+                <label>إبحث باسم الكتاب</label>
+                <div id="books">
+                    <div class="info_book">
+                        <img src="images/bnen.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>ن النسوية (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                    <div class="info_book">
+                        <img src="images/babab.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>أبابيل (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                    <div class="info_book">
+                        <img src="images/bfn.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>فن اللامبالاه (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                    <div class="info_book">
+                        <img src="images/bla.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>لأنك الله (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                    <div class="info_book">
+                        <img src="images/btkh.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>تخاريف ساخرة (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                    <div class="info_book">
+                        <img src="images/bshm.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>شمس المعارف (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                    <div class="info_book">
+                        <img src="images/bms.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>مستقبل النسوية (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                    <div class="info_book">
+                        <img src="images/btomo.PNG">
+                        <h3>كتاب إلكتروني</h3>
+                        <p>غداًأجمل (كتاب إلكتروني)</p>
+                        <h3 id="sal">24 <span>ر.س</span></h3>
+                        <label>شامل الضريبة</label>
+                        <h4>صيغ أخرى: <a href="#">كتاب مطبوع</a> </h4>
+                        <img class="add" src="images/redshop.PNG">
+                    </div>
+                   
+                </div>
+                <button class="but_show"><a href="#">عرض المزيد</a></button>
+            </div>
+    
+            <div class="d_right">
+                <div class="ull">
+                    <ul>
+                        <li><a href="#">كتب إلكترونية</a></li>
+                        <li>/</li>
+                        <li><a href="#">كتب عربية</a></li>
+                        <li>/</li>
+                        <li><a href="#">الرئيسية</a></li>
+            
+                    </ul>
+                </div>
+                <div class="d_d_d">
+                    <h3>كتب إلكترونية</h3>
+                </div>
+    
+                <div class="d_green">
+                    <h4>تصفية النتائج</h4>
+                </div>
+    
+                <div class="las_d">
+                    <label>-</label>
+                    <h4>علامة تجارية</h4>
+                </div>
+    
+                <div class="las_d">
+                    <label>-</label>
+                    <h4>السعر </h4>
+                </div>
+    
+                <div class="lo_d">
+                    <div class="lin">
+                        <div class="lq"></div>
+                        <div id="ll"></div>
+                        <div class="lq"></div>
+                    </div>
+                    <div class="rs">
+                        <label>150.رس</label>
+                        <label>0.رس</label>
+                    </div>
+    
+                </div>
+    
+                <div class="las_d">
+                    <label>-</label>
+                    <h4>صيغة الكتاب</h4>
+                </div>
+            
+            </div>
+        </div>
+    
+        <div class="all">
+            <div class="li1">
+                <ul>
+                    <li><a href="#">عن جرير</a></li>
+                    <li><a href="#">روابط سريعة</a></li>
+                    <li><a href="#">خدمات جرير</a></li>
+                    <li><a href="#">خدمة العملاء</a></li>
+                    <li><a href="#">انضم الى نشرتنا البريدية</a></li>
+                </ul>
+            </div>
+    
+            <div class="main-list">
+                <div class="list1">
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">الحوكمة</a></li>
+                        <li><a href="#">علاقات المستثمرين</a></li>
+                        <li><a href="#">الاستدامة</a></li>
+                        <li><a href="#">الاخبار</a></li>
+                        <li><a href="#">فرص العمل</a></li>
+                    </ul>
+                </div>
+                <div class="list1">
+                    <ul>
+                        <li><a href="#">اصدارات جرير</a></li>
+                        <li><a href="#">قارئ جرير</a></li>
+                        <li><a href="#">شركاء برامج المكافئات</a></li>
+                        <li><a href="#">خدمات شركات الاتصالات</a></li>
+    
+                    </ul>
+                </div>
+                <div class="list1">
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">الحوكمة</a></li>
+                        <li><a href="#">علاقات المستثمرين</a></li>
+                        <li><a href="#">الاستدامة</a></li>
+                        <li><a href="#">الاخبار</a></li>
+                        <li><a href="#">فرص العمل</a></li>
+                    </ul>
+                </div>
+                <div class="list1">
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">الحوكمة</a></li>
+                        <li><a href="#">علاقات المستثمرين</a></li>
+                        <li><a href="#">الاستدامة</a></li>
+                        <li><a href="#">الاخبار</a></li>
+                        <li><a href="#">فرص العمل</a></li>
+                    </ul>
+                </div>
+                <div class="all2">
+                    <div class="last">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="ادخل بريدك الالكتروني">
+                            <img src="images/8.JPG">
+                        </form>
+                        <button>أشتراك</button>
+                    </div>
+                    <div class="icons">
+                        <p><a href="#">تواصلو معنا</a></p>
+                        <ul>
+                            <li><a href="#"><img src="images/tiktok_logo_icon_181737.ico"></a></li>
+                            <li><a href="#"><img src="images/snapchat_logo_icon_181736.ico"></a></li>
+                            <li><a href="#"><img src="images/linkedin_logo_icon_181743.ico"></a></li>
+                            <li><a href="#"><img src="images/instagram_logo_icon_181738.ico"></a></li>
+                            <li><a href="#"><img src="images/youtube_logo_icon_181745.ico"></a></li>
+                            <li><a href="#"><img src="images/twitter_logo_icon_181735.ico"></a></li>
+                            <li><a href="#"><img src="images/facebook_logo_icon_181742.ico"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="copy1">
+                <a href="#">شروط الخدمة</a>
+                <a href="#">سياسة الخصوصية</a>
+                <p>1010654213.جميع الحقوق محفوظة لمكتبة جرير © 2015. س.ت. 1010032264. اونلاين س.ت. </p>
+            </div>
+            <div class="copy2">
+                <img src="images/16.JPG">
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>

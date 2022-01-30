@@ -18,6 +18,17 @@ changeLang.forEach( element =>
             }
         });
     });
+    
+var num=document.getElementById('num');
+var con =document.getElementsByClassName("add");
+var n=0;
+for(let i=0;i<con.length;i++){
+    con[i].addEventListener('click',function () {
+        n=n+1;
+        num.innerHTML=n;
+       
+    });
+  }
     var slide_index = 1;
 slidesDisplay(slide_index);
 function nextSlide(n) {
@@ -122,3 +133,25 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+function search(){
+    const uname= document.getElementById("ser");
+    var a, filter ,div;
+
+    filter=uname.value.toUpperCase();
+    div=document.getElementById("books");
+    a=div.getElementsByTagName("p");
+    d=div.getElementsByTagName("div");
+
+    for (let ind = 0; ind < a.length; ind++) {
+       txtValue=a[ind].textContent || a[ind].innerText;
+       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        d[ind].style.display = "";
+      } else {
+        d[ind].style.display = "none";
+      }
+    }
+  }
+
