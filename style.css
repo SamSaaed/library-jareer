@@ -317,12 +317,12 @@ table{
     position: relative;
     left: 150px;
     top:10px;
-    color: #fff;
+    color: rgb(134, 114, 114);
 }
-.log_in h2{
+.log_in h4{
   position: relative;
   left: 150px;
-  color: #fff;
+  color: rgb(134, 114, 114);
 }
   .option-list{
       position: relative;
