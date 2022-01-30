@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cart</title>
+</head>
+<body>
+    <div class="lists">
+
+        <ul>
+            <div class="one">
+                <li> <a href="#"><img src="images/0.JPG"></a></li>
+                <li class="change-language"><a href="#"><span>English</span></a></li>
+            </div>
+            <div class="one">
+                <li> <a href="#"><img src="images/01.JPG"></a></li>
+                <li><a href="#">المملكة العربية السعودية</a></li>
+            </div>
+            <li><a href="#"><img src="images/02.JPG"></a></li>
+            <li><a href="#">فروعنا</a></li>
+            <li><a href="#"><img src="images/03.JPG"></a></li>
+            <li><a href="#">المساعدة</a></li>
+            <li> <a href="#"><img src="images/04.JPG"></a></li>
+            <li><a href="#">طلبات الصيانة</a></li>
+            <li><a href="#"><img src="images/05.JPG"></a></li>
+            <li><a href="#">تتبع الشحنة</a></li>
+            <li><a href="#"><img src="images/07.JPG"></a></li>
+            <li><a href="#">المفضلة</a></li>
+            <li><a href="#"><img src="images/08.JPG"></a></li>
+            <li><a href="#" class="show-modal-btn" onclick="callLink(this);" alt=""> <span>ادخل لحسابك أو سجل الان</span></a></li>
+            <li><a href="#"><img src="images/09.JPG"></a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <div class="img">
+           <a href="salh.html"> <img src="images/06.JPG"></a>
+        </div>
+        <div class="sear">
+
+            <form>
+                <input type="text" name="search" placeholder="البحث">
+            </form>
+        </div>
+        <div class="img2">
+            <img src="images/37.JPG">
+        </div>
+    </div>
+    <main class="checkout">
+        <div class="stepper">
+            <div class="step--1 step-active">Step 1</div>
+            <div class="step--2">Step 2</div>
+            <div class="step--3">Step 3</div>
+            <div class="step--4">Finish</div>
+        </div>
+        <form class="form form-active">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    معلوماتك الشخصية
+                </h1>
+            </div>
+            <input type="text" placeholder="FullName">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="mobile number">
+            <button class="form__btn" id="btn-1">Next</button>
+        </form>
+        <form class="form">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    منتجاتك
+                </h1>
+            </div>
+
+            <div class="cart-item px-2 pt-2 mt-1">
+                <div class="item-above d-flex">
+                    <div class="ml-1">
+                        <img src="Cart%20%D8%A7%D9%84%D8%B3%D9%84%D8%A9_files/book11.jpg" alt="user" width="40">
+                    </div>
+                    <div class="item-details">
+                        <span class="h6">
+                            البداية والنهاية الجزء الأول (كتاب إلكتروني)
+                        </span>
+                        <br>
+                        <span class="subtitle">
+                            منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير
+                        </span>
+                        <div>
+                            <blockquote class="blockquote my-1">
+                                <p>
+                                    <b>ملاحظة:</b>
+                                    هذا المنتج رقمي وسيتم توصيله عبر البريد الإلكتروني
+                                </p>
+                                <span>
+                                    <a href="#">كيفية الحصول على منتج?</a>
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-bottom py-1">
+                    <span class="link">
+                        <i class="fa fa-close"></i>
+                        احذف
+                    </span>
+                </div>
+            </div>
+            
+            <button class="form__btn" id="btn-2-prev">Previous</button>
+            <button class="form__btn" id="btn-2-next">Next</button>
+        </form>
+        <form class="form">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    طرق الدفع
+                </h1>
+            </div>
+                <ul class="d-flex justify-content-space-between px-2">
+                    <li><img src="images/46.JPG" alt="" width="40"> </li>
+                    <li><img src="images/47.JPG" alt="" width="40"></li>
+                    <li><img src="images/48.JPG" alt="" width="40"></li>
+                    <li><img src="images/49.JPG" alt="" width="40"> </li>
+                    <li><img src="images/50.JPG" alt="" width="40"></li>
+                    <li><img src="images/51.JPG" alt="" width="40"></li>
+                </ul>
+            <input type="text" placeholder="card number">
+            <input type="text" placeholder="expireDate">
+            <input type="text" placeholder="PIN">
+            <button class="form__btn" id="btn-3">Submit</button>
+        </form>
+        
+        <div class="form--message"></div>
+    </main>
+    
+    <div class="all">
+        <div class="li1">
+            <ul>
+                <li><a href="#">عن جرير</a></li>
+                <li><a href="#">روابط سريعة</a></li>
+                <li><a href="#">خدمات جرير</a></li>
+                <li><a href="#">خدمة العملاء</a></li>
+                <li><a href="#">انضم الى نشرتنا البريدية</a></li>
+            </ul>
+        </div>
+
+        <div class="main-list">
+            <div class="list1">
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">الحوكمة</a></li>
+                    <li><a href="#">علاقات المستثمرين</a></li>
+                    <li><a href="#">الاستدامة</a></li>
+                    <li><a href="#">الاخبار</a></li>
+                    <li><a href="#">فرص العمل</a></li>
+                </ul>
+            </div>
+            <div class="list1">
+                <ul>
+                    <li><a href="#">اصدارات جرير</a></li>
+                    <li><a href="#">قارئ جرير</a></li>
+                    <li><a href="#">شركاء برامج المكافئات</a></li>
+                    <li><a href="#">خدمات شركات الاتصالات</a></li>
+
+                </ul>
+            </div>
+            <div class="list1">
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">الحوكمة</a></li>
+                    <li><a href="#">علاقات المستثمرين</a></li>
+                    <li><a href="#">الاستدامة</a></li>
+                    <li><a href="#">الاخبار</a></li>
+                    <li><a href="#">فرص العمل</a></li>
+                </ul>
+            </div>
+            <div class="list1">
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">الحوكمة</a></li>
+                    <li><a href="#">علاقات المستثمرين</a></li>
+                    <li><a href="#">الاستدامة</a></li>
+                    <li><a href="#">الاخبار</a></li>
+                    <li><a href="#">فرص العمل</a></li>
+                </ul>
+            </div>
+            <div class="all2">
+                <div class="last">
+                    <form>
+                        <input type="email" id="email" name="email" placeholder="ادخل بريدك الالكتروني">
+                        <img src="images/8.JPG">
+                    </form>
+                    <button>أشتراك</button>
+                </div>
+                <div class="icons">
+                    <p><a href="#">تواصلو معنا</a></p>
+                    <ul>
+                        <li><a href="#"><img src="images/tiktok_logo_icon_181737.ico"></a></li>
+                        <li><a href="#"><img src="images/snapchat_logo_icon_181736.ico"></a></li>
+                        <li><a href="#"><img src="images/linkedin_logo_icon_181743.ico"></a></li>
+                        <li><a href="#"><img src="images/instagram_logo_icon_181738.ico"></a></li>
+                        <li><a href="#"><img src="images/youtube_logo_icon_181745.ico"></a></li>
+                        <li><a href="#"><img src="images/twitter_logo_icon_181735.ico"></a></li>
+                        <li><a href="#"><img src="images/facebook_logo_icon_181742.ico"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <div class="copy1">
+            <a href="#">شروط الخدمة</a>
+            <a href="#">سياسة الخصوصية</a>
+            <p>1010654213.جميع الحقوق محفوظة لمكتبة جرير © 2015. س.ت. 1010032264. اونلاين س.ت. </p>
+        </div>
+        <div class="copy2">
+            <img src="images/16.JPG">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
